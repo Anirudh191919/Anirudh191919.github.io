@@ -307,7 +307,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'projects', 'journey', 'photos', 'achievements', 'contact'];
+      const sections = ['projects', 'about', 'journey', 'photos', 'achievements', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -437,8 +437,8 @@ function App() {
           {/* Desktop Navigation Links */}
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
             {[
-              { id: 'about', label: 'About' },
               { id: 'projects', label: 'Projects' },
+              { id: 'about', label: 'About' },
               { id: 'journey', label: 'My Journey' },
               { id: 'photos', label: 'Photo Gallery' },
               { id: 'achievements', label: 'Achievements' },
@@ -483,8 +483,8 @@ function App() {
         {mobileMenuOpen && (
           <div className="md:hidden border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 px-4 py-4 space-y-3 transition-colors duration-305">
             {[
-              { id: 'about', label: 'About' },
               { id: 'projects', label: 'Projects' },
+              { id: 'about', label: 'About' },
               { id: 'journey', label: 'My Journey' },
               { id: 'photos', label: 'Photo Gallery' },
               { id: 'achievements', label: 'Achievements' },
@@ -508,49 +508,49 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="max-w-5xl mx-auto px-4 pt-16 pb-16 md:pt-28 md:pb-24 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+      <section id="hero" className="max-w-5xl mx-auto px-4 pt-8 pb-8 md:pt-14 md:pb-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-7 text-center md:text-left order-2 md:order-1">
-          <span className="inline-block px-3 py-1 text-xs font-bold bg-emerald-100 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-400 rounded-full mb-4 uppercase tracking-wider">
+          <span className="inline-block px-3 py-1 text-xs font-bold bg-emerald-100 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-400 rounded-full mb-3 uppercase tracking-wider">
             Welcome to my Portfolio
           </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-3">
             Hi, I'm <span className="bg-gradient-to-r from-emerald-500 to-blue-500 bg-clip-text text-transparent">{ANIRUDH_DATA.name}</span>
           </h1>
-          <p className="text-xl md:text-2xl font-bold text-zinc-600 dark:text-zinc-300 mb-3">
+          <p className="text-lg md:text-xl font-bold text-zinc-700 dark:text-zinc-200 mb-2">
             {ANIRUDH_DATA.title}
           </p>
-          <p className="text-sm md:text-md text-zinc-500 dark:text-zinc-400 mb-6 font-medium">
+          <p className="text-xs md:text-sm text-zinc-500 dark:text-zinc-400 mb-4 font-medium">
             {ANIRUDH_DATA.subtitle}
           </p>
-          <p className="text-md text-zinc-500 dark:text-zinc-400 mb-8 max-w-xl leading-relaxed">
+          <p className="text-sm md:text-base text-zinc-600 dark:text-zinc-400 mb-6 max-w-xl leading-relaxed">
             {ANIRUDH_DATA.about}
           </p>
 
           {/* Social and Call to Actions */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
+          <div className="flex flex-col sm:flex-row items-center gap-3.5 mb-6">
             <a
               href={ANIRUDH_DATA.resumeUrl}
               download="Marketing_Resume_Anirudh.pdf"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg px-6 py-3 font-semibold transition-all duration-200 shadow-sm"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg px-5 py-2.5 font-semibold transition-all duration-200 shadow-sm text-sm"
             >
-              <FileText size={18} />
+              <FileText size={16} />
               Download Resume (PDF)
             </a>
             <a
               href="#contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-200 rounded-lg px-6 py-3 font-semibold transition-all duration-200 shadow-sm"
+              className="w-full sm:w-auto inline-flex items-center justify-center bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-700 dark:text-zinc-200 rounded-lg px-5 py-2.5 font-semibold transition-all duration-200 shadow-sm text-sm"
             >
               Get In Touch
             </a>
           </div>
 
           <div className="flex justify-center md:justify-start items-center gap-6">
-            <a href={ANIRUDH_DATA.linkedin} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors flex items-center gap-1.5 text-sm font-semibold" aria-label="LinkedIn">
-              <Linkedin size={20} />
+            <a href={ANIRUDH_DATA.linkedin} target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors flex items-center gap-1.5 text-xs md:text-sm font-semibold" aria-label="LinkedIn">
+              <Linkedin size={18} />
               LinkedIn Profile
             </a>
-            <a href={`mailto:${ANIRUDH_DATA.email}`} className="text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors flex items-center gap-1.5 text-sm font-semibold" aria-label="Email">
-              <Mail size={20} />
+            <a href={`mailto:${ANIRUDH_DATA.email}`} className="text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white transition-colors flex items-center gap-1.5 text-xs md:text-sm font-semibold" aria-label="Email">
+              <Mail size={18} />
               {ANIRUDH_DATA.email.split('@')[0]}
             </a>
           </div>
@@ -558,7 +558,7 @@ function App() {
 
         {/* Profile Picture Card */}
         <div className="md:col-span-5 order-1 md:order-2 flex justify-center">
-          <div className="relative group w-72 h-72 md:w-80 md:h-80">
+          <div className="relative group w-64 h-64 md:w-72 md:h-72">
             <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500 to-blue-500 rounded-2xl rotate-3 scale-102 blur-sm group-hover:rotate-6 transition-all duration-300" />
             <div className="relative w-full h-full rounded-2xl overflow-hidden bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xl">
               <img 
@@ -573,52 +573,13 @@ function App() {
 
       <hr className="max-w-5xl mx-auto border-zinc-200 dark:border-zinc-900" />
 
-      {/* About & Skills Section */}
-      <section id="about" className="max-w-5xl mx-auto px-4 py-16 md:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
-          <div className="md:col-span-4">
-            <h2 className="text-2xl font-bold tracking-tight mb-4 flex items-center gap-2">
-              <span className="w-1.5 h-6 bg-emerald-500 rounded-full"></span>
-              Core Profile
-            </h2>
-            <div className="space-y-4 text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm md:text-base">
-              <p>
-                I am an MBA candidate (PGPM) at Great Lakes Institute of Management, specializing in business acquisition, D2C strategy, and commercial growth.
-              </p>
-              <p>
-                My professional experience spanning 28 months includes running ₹50Cr revenue funnels at HDFC Credila and managing premium enterprise seller accounts at Teleperformance.
-              </p>
-            </div>
-          </div>
-
-          <div className="md:col-span-8">
-            <h2 className="text-2xl font-bold tracking-tight mb-6 flex items-center gap-2">
-              <span className="w-1.5 h-6 bg-emerald-500 rounded-full"></span>
-              Core Competencies
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {ANIRUDH_DATA.skills.map((skill, idx) => (
-                <div key={idx} className="flex items-center gap-3 p-3.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c0c0f] shadow-sm">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 font-bold text-xs">
-                    ✓
-                  </span>
-                  <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{skill}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr className="max-w-5xl mx-auto border-zinc-200 dark:border-zinc-900" />
-
-      {/* Projects Section */}
-      <section id="projects" className="max-w-5xl mx-auto px-4 py-16 md:py-24">
-        <h2 className="text-3xl font-bold tracking-tight mb-4 text-center flex items-center justify-center gap-2">
+      {/* Projects Section - Front Page Spotlight */}
+      <section id="projects" className="max-w-5xl mx-auto px-4 pt-8 pb-14 md:pt-12 md:pb-18">
+        <h2 className="text-3xl font-bold tracking-tight mb-3 text-center flex items-center justify-center gap-2">
           <Code className="text-emerald-500" size={24} />
           Marketing & Growth Projects
         </h2>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 text-center mb-12 max-w-lg mx-auto">
+        <p className="text-sm text-zinc-500 dark:text-zinc-400 text-center mb-8 md:mb-10 max-w-lg mx-auto">
           Core live business projects and marketing campaigns designed under academic and professional supervision.
         </p>
 
@@ -690,6 +651,45 @@ function App() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <hr className="max-w-5xl mx-auto border-zinc-200 dark:border-zinc-900" />
+
+      {/* About & Skills Section (Core Profile & Competencies) */}
+      <section id="about" className="max-w-5xl mx-auto px-4 py-14 md:py-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+          <div className="md:col-span-4">
+            <h2 className="text-2xl font-bold tracking-tight mb-4 flex items-center gap-2">
+              <span className="w-1.5 h-6 bg-emerald-500 rounded-full"></span>
+              Core Profile
+            </h2>
+            <div className="space-y-4 text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm md:text-base">
+              <p>
+                I am an MBA candidate (PGPM) at Great Lakes Institute of Management, specializing in business acquisition, D2C strategy, and commercial growth.
+              </p>
+              <p>
+                My professional experience spanning 28 months includes running ₹50Cr revenue funnels at HDFC Credila and managing premium enterprise seller accounts at Teleperformance.
+              </p>
+            </div>
+          </div>
+
+          <div className="md:col-span-8">
+            <h2 className="text-2xl font-bold tracking-tight mb-6 flex items-center gap-2">
+              <span className="w-1.5 h-6 bg-emerald-500 rounded-full"></span>
+              Core Competencies
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {ANIRUDH_DATA.skills.map((skill, idx) => (
+                <div key={idx} className="flex items-center gap-3 p-3.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c0c0f] shadow-sm">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 font-bold text-xs">
+                    ✓
+                  </span>
+                  <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{skill}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
