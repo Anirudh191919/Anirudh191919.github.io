@@ -144,6 +144,13 @@ const ANIRUDH_DATA = {
       subtitle: "Market Research & Channel Strategy",
       description: "Conducted market research, analyzed product assortment, pricing schemes, SKU presence, and in-store visibility to identify actionable retail marketing insights.",
       tags: ["Market Research", "Assortment Analysis", "Retail Marketing"]
+    },
+    {
+      category: "AGENTIC AI / AUTOMATION",
+      title: "MBA Email & Task Agent",
+      subtitle: "Intelligent Email Filtering & Task Automation",
+      description: "Built an AI agent that monitors MBA college and competition-related emails, filters important and actionable messages, extracts deadlines and required actions, and automatically creates relevant tasks with deadlines in Google Tasks.",
+      tags: ["Email Automation", "AI Agent", "Task Management"]
     }
   ],
   skills: [
@@ -897,7 +904,7 @@ function App() {
             >
               <div>
                 <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block mb-2">
-                  Campaign / Strategy
+                  {proj.category || "Campaign / Strategy"}
                 </span>
                 <h3 className="text-lg font-bold text-zinc-900 dark:text-white leading-tight mb-1">
                   {proj.title}
