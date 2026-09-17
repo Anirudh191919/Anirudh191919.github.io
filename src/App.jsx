@@ -130,22 +130,22 @@ const ANIRUDH_DATA = {
     {
       title: "Herbs & Hopes 2026",
       subtitle: "Revenue Scale-Up & Digital Growth Strategy",
-      description: "Developing an intensive D2C strategy leveraging digital marketing, customer acquisition channels, and Campaign ROI optimization to target 2X revenue growth.",
-      tags: ["D2C Strategy", "ROI Optimization", "Digital Campaigns"],
+      description: "Designed a trial-led acquisition and conversion model by reducing purchase friction and optimising the digital customer journey, creating a scalable approach to boost website-led sales.",
+      tags: ["D2C Acquisition", "Customer Journey", "Conversion Optimization"],
       link: "https://anirudh191919.github.io/herbsnhopes-campaign/",
       linkText: "View Live Campaign"
     },
     {
-      title: "LiveSwitch India 2026",
-      subtitle: "Growth & GTM Strategy Internship",
-      description: "Building the GTM strategy and marketing mix to sharpen market positioning, target the right customer segments, and drive scalable, cost-effective growth.",
-      tags: ["GTM Strategy", "Marketing Mix", "Market Segmentation"]
+      title: "3DU Internship 2026",
+      subtitle: "Market Entry & Go-to-Market Strategy",
+      description: "Developed the Go-to-Market roadmap by aligning customer segmentation, value proposition and marketing-mix levers, establishing a scalable approach for customer acquisition and growth.",
+      tags: ["Go-to-Market", "Customer Acquisition", "Value Proposition"]
     },
     {
-      title: "PepsiCo 2026",
+      title: "PepsiCo Internship 2026",
       subtitle: "Market Research & Channel Strategy",
-      description: "Conducted market research, analyzed product assortment, pricing schemes, SKU presence, and in-store visibility to identify actionable retail marketing insights.",
-      tags: ["Market Research", "Assortment Analysis", "Retail Marketing"]
+      description: "Analysed retail-level data across product assortment, pricing, SKU availability and in-store visibility to identify distribution and merchandising gaps, generating actionable channel insights for retail strategy.",
+      tags: ["Retail Analytics", "Channel Strategy", "Distribution Insights"]
     },
     {
       category: "AGENTIC AI / AUTOMATION",
