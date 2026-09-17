@@ -67,7 +67,7 @@ const ANIRUDH_DATA = {
   name: "Anirudh Patel",
   title: "Marketer & Growth Strategist",
   subtitle: "PGPM Candidate @ Great Lakes | Ex-Credila Sales Executive",
-  about: "Finance-focused professional combining credit portfolio experience with financial analysis and data-driven problem-solving to evaluate performance, manage risk, and support investment decisions (29 Months Experience).",
+  about: "Commercially minded marketer with strong business acumen and a data-led approach to identifying opportunities and driving measurable growth across revenue, customer acquisition, and market expansion.",
   phone: "+91 62635 58264",
   email: "anirudh.ft271016@greatlakes.edu.in",
   linkedin: "https://www.linkedin.com/in/anirudh-patel-474996215",
@@ -699,7 +699,7 @@ function App() {
             </h2>
             <div className="space-y-4 text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm md:text-base">
               <p>
-                Finance-focused professional combining credit portfolio experience with financial analysis and data-driven problem-solving to evaluate performance, manage risk, and support investment decisions.
+                Commercially minded marketer with strong business acumen and a data-led approach to identifying opportunities and driving measurable growth across revenue, customer acquisition, and market expansion.
               </p>
               <p>
                 Professional experience spanning <strong>29 months</strong>, including managing an end-to-end portfolio of ₹50Cr at Credila Financial Services and managing premier "Diamond" accounts for Flipkart at Teleperformance.
