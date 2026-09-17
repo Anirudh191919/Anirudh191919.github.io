@@ -131,7 +131,9 @@ const ANIRUDH_DATA = {
       title: "Herbs & Hopes 2026",
       subtitle: "Revenue Scale-Up & Digital Growth Strategy",
       description: "Developing an intensive D2C strategy leveraging digital marketing, customer acquisition channels, and Campaign ROI optimization to target 2X revenue growth.",
-      tags: ["D2C Strategy", "ROI Optimization", "Digital Campaigns"]
+      tags: ["D2C Strategy", "ROI Optimization", "Digital Campaigns"],
+      link: "https://anirudh191919.github.io/herbsnhopes-campaign/",
+      linkText: "View Live Campaign"
     },
     {
       title: "LiveSwitch India 2026",
@@ -305,7 +307,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'journey', 'projects', 'photos', 'achievements', 'contact'];
+      const sections = ['about', 'projects', 'journey', 'photos', 'achievements', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -436,8 +438,8 @@ function App() {
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
             {[
               { id: 'about', label: 'About' },
-              { id: 'journey', label: 'My Journey' },
               { id: 'projects', label: 'Projects' },
+              { id: 'journey', label: 'My Journey' },
               { id: 'photos', label: 'Photo Gallery' },
               { id: 'achievements', label: 'Achievements' },
               { id: 'contact', label: 'Contact' }
@@ -482,8 +484,8 @@ function App() {
           <div className="md:hidden border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 px-4 py-4 space-y-3 transition-colors duration-305">
             {[
               { id: 'about', label: 'About' },
-              { id: 'journey', label: 'My Journey' },
               { id: 'projects', label: 'Projects' },
+              { id: 'journey', label: 'My Journey' },
               { id: 'photos', label: 'Photo Gallery' },
               { id: 'achievements', label: 'Achievements' },
               { id: 'contact', label: 'Contact' }
@@ -605,6 +607,89 @@ function App() {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      <hr className="max-w-5xl mx-auto border-zinc-200 dark:border-zinc-900" />
+
+      {/* Projects Section */}
+      <section id="projects" className="max-w-5xl mx-auto px-4 py-16 md:py-24">
+        <h2 className="text-3xl font-bold tracking-tight mb-4 text-center flex items-center justify-center gap-2">
+          <Code className="text-emerald-500" size={24} />
+          Marketing & Growth Projects
+        </h2>
+        <p className="text-sm text-zinc-500 dark:text-zinc-400 text-center mb-12 max-w-lg mx-auto">
+          Core live business projects and marketing campaigns designed under academic and professional supervision.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {ANIRUDH_DATA.projects.map((proj, idx) => (
+            <div 
+              key={idx}
+              className="flex flex-col justify-between p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c0c0f] hover:border-emerald-500/50 shadow-sm transition-all duration-300 group"
+            >
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block">
+                    {proj.category || "Campaign / Strategy"}
+                  </span>
+                  {proj.link && (
+                    <a
+                      href={proj.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-zinc-400 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors p-0.5"
+                      title={proj.linkText || "View Live Campaign"}
+                    >
+                      <ExternalLink size={15} />
+                    </a>
+                  )}
+                </div>
+                <h3 className="text-lg font-bold text-zinc-900 dark:text-white leading-tight mb-1">
+                  {proj.link ? (
+                    <a 
+                      href={proj.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors inline-flex items-center gap-1.5"
+                    >
+                      {proj.title}
+                    </a>
+                  ) : (
+                    proj.title
+                  )}
+                </h3>
+                <p className="text-xs text-zinc-500 dark:text-zinc-450 font-semibold mb-4 leading-none">
+                  {proj.subtitle}
+                </p>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                  {proj.description}
+                </p>
+
+                {proj.link && (
+                  <div className="mb-4 pt-1">
+                    <a
+                      href={proj.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800/80 hover:bg-emerald-600 hover:text-white dark:hover:bg-emerald-500 dark:hover:text-black transition-all duration-200 group/link shadow-xs"
+                    >
+                      <span>{proj.linkText || "View Live Campaign"}</span>
+                      <ExternalLink size={13} className="transition-transform duration-200 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
+                    </a>
+                  </div>
+                )}
+              </div>
+
+              <div className="flex flex-wrap gap-2 pt-4 border-t border-zinc-100 dark:border-zinc-900">
+                {proj.tags.map(t => (
+                  <span key={t} className="px-2 py-0.5 text-xs rounded-md bg-zinc-105 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-medium">
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -881,51 +966,6 @@ function App() {
 
           </div>
 
-        </div>
-      </section>
-
-      <hr className="max-w-5xl mx-auto border-zinc-200 dark:border-zinc-900" />
-
-      {/* Projects Section */}
-      <section id="projects" className="max-w-5xl mx-auto px-4 py-16 md:py-24">
-        <h2 className="text-3xl font-bold tracking-tight mb-4 text-center flex items-center justify-center gap-2">
-          <Code className="text-emerald-500" size={24} />
-          Marketing & Growth Projects
-        </h2>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400 text-center mb-12 max-w-lg mx-auto">
-          Core live business projects and marketing campaigns designed under academic and professional supervision.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {ANIRUDH_DATA.projects.map((proj, idx) => (
-            <div 
-              key={idx}
-              className="flex flex-col justify-between p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c0c0f] hover:border-emerald-500/50 shadow-sm transition-all duration-300"
-            >
-              <div>
-                <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-widest block mb-2">
-                  {proj.category || "Campaign / Strategy"}
-                </span>
-                <h3 className="text-lg font-bold text-zinc-900 dark:text-white leading-tight mb-1">
-                  {proj.title}
-                </h3>
-                <p className="text-xs text-zinc-500 dark:text-zinc-450 font-semibold mb-4 leading-none">
-                  {proj.subtitle}
-                </p>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">
-                  {proj.description}
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-zinc-100 dark:border-zinc-900">
-                {proj.tags.map(t => (
-                  <span key={t} className="px-2 py-0.5 text-xs rounded-md bg-zinc-105 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 font-medium">
-                    {t}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
