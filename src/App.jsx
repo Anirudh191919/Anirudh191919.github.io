@@ -23,7 +23,8 @@ import {
   Calendar,
   Image as ImageIcon,
   User,
-  Heart
+  Heart,
+  BadgeCheck
 } from 'lucide-react';
 
 // Custom inline SVG icons for brands (Github & Linkedin)
@@ -66,7 +67,7 @@ const ANIRUDH_DATA = {
   name: "Anirudh Patel",
   title: "Marketer & Growth Strategist",
   subtitle: "PGPM Candidate @ Great Lakes | Ex-Credila Sales Executive",
-  about: "Commercially minded marketer with 28 months of professional experience, combining strong business acumen and a data-led approach to identify growth opportunities, optimize conversion funnels, and scale revenue across corporate segments.",
+  about: "Finance-focused professional combining credit portfolio experience with financial analysis and data-driven problem-solving to evaluate performance, manage risk, and support investment decisions (29 Months Experience).",
   phone: "+91 62635 58264",
   email: "anirudh.ft271016@greatlakes.edu.in",
   linkedin: "https://www.linkedin.com/in/anirudh-patel-474996215",
@@ -74,25 +75,32 @@ const ANIRUDH_DATA = {
   profilePic: "/assets/images/profile.jpg", // User uploaded profile photo
   education: [
     {
-      degree: "PGPM (Post Graduate Program in Management)",
+      degree: "MBA (PGPM)",
       institution: "Great Lakes Institute of Management, Chennai",
       period: "2026 - 2027",
       grade: "3.49 / 4.0 CGPA",
-      details: "Focusing on Marketing Strategy, Digital Growth, and Brand Management. Active in corporate engagements and committee roles."
+      details: "Focusing on Commercial Analytics, Marketing Strategy, and Finance. Placement Committee Member & Karma Yoga Project Lead."
     },
     {
-      degree: "BBA (Bachelor of Business Administration)",
-      institution: "Dr. APJ Abdul Kalam University, Indore",
+      degree: "BBA (Commerce)",
+      institution: "Dr APJ Abdul Kalam University, Indore",
       period: "2019 - 2022",
       grade: "65.58%",
       details: "Built foundational business administration principles, market logic, and customer relation skills."
     },
     {
-      degree: "12th Standard",
+      degree: "12th Standard (Arts)",
       institution: "The Emerald Heights International School, Indore",
       period: "2019",
-      grade: "96.0%",
-      details: "Academic top tier. Secured a 100% Sports Scholarship and captained the varsity Football team."
+      grade: "95.8%",
+      details: "Academic top tier. Secured a 100% Sports Scholarship from EHIS and captained the varsity Football team."
+    },
+    {
+      degree: "10th Standard",
+      institution: "Vidhya Sagar School, Indore",
+      period: "2017",
+      grade: "76.0%",
+      details: "Secondary school education."
     }
   ],
   experience: [
@@ -106,11 +114,11 @@ const ANIRUDH_DATA = {
       bullets: [
         "Managed an end-to-end portfolio of ₹50Cr, driving funnel conversion from lead qualification to final closing to generate ₹30Cr in top-line disbursement and ₹7.5Cr Net Lifetime Revenue.",
         "Analysed customer profiles and financial requirements to develop tailored solutions, resolving documentation bottlenecks and sustaining a 45%–55% lead-to-deal sanction ratio.",
-        "Managed high-priority customer issues and cross-border transaction challenges, minimising delays and achieving 300% of target within 11 months through strong customer engagement and solution-oriented selling.",
+        "Resolved high-priority client issues and cross-border transaction challenges through structured stakeholder coordination and solution redesign, achieving 300% of the target within 11 months.",
         "Identified and resolved communication gaps by introducing a real-time tracking dashboard, improving client trust and resulting in a 100% surge in inbound leads."
       ],
       tags: ["Value Selling", "Portfolio Mgmt", "Client Relations", "Process Optimization"],
-      award: "Highest Performer Credila (2025)"
+      award: "Highest Performer HDFC Credila (2025)"
     },
     {
       id: "exp-teleperformance",
@@ -120,8 +128,7 @@ const ANIRUDH_DATA = {
       location: "Indore, India",
       description: "Managed high-priority client accounts for portfolio retention and conflict resolution.",
       bullets: [
-        "Managed premier 'Diamond' seller accounts for retention and portfolio growth, maintaining 90% Seller SSAT across high-value accounts and minimising competitor migration.",
-        "Addressed merchant operational escalations and resolved transaction issues to safeguard account health."
+        "Managed premier 'Diamond' sellers for Flipkart on retention and portfolio growth, maintaining 90% Seller SSAT across high-value accounts and minimising competitor migration."
       ],
       tags: ["Account Retention", "Customer Centricity", "Escalation Resolution", "Active Listening"]
     }
@@ -156,61 +163,87 @@ const ANIRUDH_DATA = {
     }
   ],
   skills: [
-    "Customer Acquisition & Lead Conversion",
-    "Growth & Digital Marketing",
     "Commercial Analytics",
-    "Cross-Functional Leadership",
-    "Value-Based Solution Selling",
-    "Social Media Strategy",
-    "Client Engagement",
-    "Market Research"
+    "Growth & Digital Marketing",
+    "Go-to-Market Strategy",
+    "End-to-End Lead Conversion",
+    "Client Relationship Management",
+    "Cross-Functional Leadership"
+  ],
+  certifications: [
+    {
+      title: "Customer-centricity and Interpersonal Skills",
+      year: "2026"
+    },
+    {
+      title: "Social Media Marketing",
+      year: "2026"
+    },
+    {
+      title: "Equity, Derivative Market & Investment Banking Analyst",
+      year: "2026"
+    }
   ],
   achievements: [
+    {
+      title: "Hyrox 1st runner-up",
+      detail: "Secured 1st runner-up place at the Hyrox fitness challenge held at GLIM Chennai (GLIM C | 2026).",
+      category: "sports"
+    },
+    {
+      title: "Consulting Case Competition Finalist",
+      detail: "Selected as finalist in the Consulting Case Competition at Great Lakes Chennai (GLIM C | 2026).",
+      category: "college"
+    },
+    {
+      title: "Rest In Pitch Finalist",
+      detail: "Finalist in the 'Rest In Pitch' case competition event at Great Lakes Chennai (GLIM C | 2026).",
+      category: "college"
+    },
+    {
+      title: "Highest Performer HDFC Credila",
+      detail: "Awarded Highest Performer at HDFC Credila Financial Services (2025).",
+      category: "work"
+    },
     {
       title: "INDIA U-18 Asian Games Football",
       detail: "Selected to represent India at the U-18 Asian Games Football selection camp (2019).",
       category: "sports"
     },
     {
-      title: "Hyrox 1st Runner-Up",
-      detail: "Secured 1st runner-up place at the Hyrox fitness challenge held at GLIM Chennai (2026).",
-      category: "sports"
-    },
-    {
-      title: "Highest Performer Credila",
-      detail: "Awarded Highest Performer at HDFC Credila Financial Services (2025).",
-      category: "work"
-    },
-    {
-      title: "Rest In Pitch Finalist",
-      detail: "Finalist in the 'Rest In Pitch' case presentation event at Great Lakes Chennai (2026).",
-      category: "college"
-    },
-    {
-      title: "100% Sports Scholarship",
-      detail: "Recipient of full academic scholarship for athletic achievements from EHIS (2019).",
+      title: "100% Sports Scholarship from EHIS",
+      detail: "Recipient of 100% Sports Scholarship for outstanding athletic merit from EHIS (2019).",
       category: "sports"
     }
   ],
   responsibilities: [
     {
-      role: "Placement Committee Member (Business Development)",
-      organization: "Great Lakes Institute of Management",
-      year: "2026 - Present",
-      details: "Formulating business development outreach, engaging top corporate recruiters, and coordinating student corporate alignment."
-    },
-    {
-      role: "Project Lead, Karma Yoga",
-      organization: "Great Lakes Institute of Management",
+      role: "Placement Committee Member",
+      organization: "Great Lakes Institute of Management, Chennai",
       year: "2026",
-      details: "Leading socio-economic research and rural community growth campaigns under the GLIM experiential leadership program."
+      details: "Driving corporate relations, business development outreach, and student placement alignments."
     },
     {
-      role: "Varsity Football Captain",
+      role: "Project Lead Karma Yoga",
+      organization: "Great Lakes Institute of Management, Chennai",
+      year: "2026",
+      details: "Leading socio-economic research, village immersion, and community development under the GLIM experiential leadership program."
+    },
+    {
+      role: "Football Team Captain (National, State & District)",
       organization: "The Emerald Heights International School",
       year: "2020",
-      details: "Captained the football team at National, State, and District levels, managing tournament strategies and squad training."
+      details: "Captained the football team at national, state, and district levels, managing tournament strategies and squad training."
     }
+  ],
+  extraCurriculars: [
+    "Football",
+    "Investor & Trader",
+    "Esports gaming"
+  ],
+  languages: [
+    { name: "English", level: "Advanced" },
+    { name: "Hindi", level: "Native / Bilingual" }
   ],
   photos: {
     root: [
@@ -530,7 +563,7 @@ function App() {
           <div className="flex flex-col sm:flex-row items-center gap-3.5 mb-6">
             <a
               href={ANIRUDH_DATA.resumeUrl}
-              download="Marketing_Resume_Anirudh.pdf"
+              download="Anirudh_Patel_Resume.pdf"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg px-5 py-2.5 font-semibold transition-all duration-200 shadow-sm text-sm"
             >
               <FileText size={16} />
@@ -666,29 +699,78 @@ function App() {
             </h2>
             <div className="space-y-4 text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm md:text-base">
               <p>
-                I am an MBA candidate (PGPM) at Great Lakes Institute of Management, specializing in business acquisition, D2C strategy, and commercial growth.
+                Finance-focused professional combining credit portfolio experience with financial analysis and data-driven problem-solving to evaluate performance, manage risk, and support investment decisions.
               </p>
               <p>
-                My professional experience spanning 28 months includes running ₹50Cr revenue funnels at HDFC Credila and managing premium enterprise seller accounts at Teleperformance.
+                Professional experience spanning <strong>29 months</strong>, including managing an end-to-end portfolio of ₹50Cr at Credila Financial Services and managing premier "Diamond" accounts for Flipkart at Teleperformance.
               </p>
+            </div>
+
+            {/* Languages & Extra-Curriculars */}
+            <div className="mt-6 pt-6 border-t border-zinc-200 dark:border-zinc-800 space-y-4">
+              <div>
+                <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Languages Known</h4>
+                <div className="flex flex-wrap gap-2">
+                  {ANIRUDH_DATA.languages.map((lang, idx) => (
+                    <span key={idx} className="px-2.5 py-1 text-xs rounded-md bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 font-medium">
+                      <strong>{lang.name}</strong> • {lang.level}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Extra-Curriculars</h4>
+                <div className="flex flex-wrap gap-2">
+                  {ANIRUDH_DATA.extraCurriculars.map((item, idx) => (
+                    <span key={idx} className="px-2.5 py-1 text-xs rounded-md bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 font-medium">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="md:col-span-8">
-            <h2 className="text-2xl font-bold tracking-tight mb-6 flex items-center gap-2">
-              <span className="w-1.5 h-6 bg-emerald-500 rounded-full"></span>
-              Core Competencies
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {ANIRUDH_DATA.skills.map((skill, idx) => (
-                <div key={idx} className="flex items-center gap-3 p-3.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c0c0f] shadow-sm">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 font-bold text-xs">
-                    ✓
-                  </span>
-                  <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{skill}</span>
-                </div>
-              ))}
+          <div className="md:col-span-8 space-y-8">
+            <div>
+              <h2 className="text-2xl font-bold tracking-tight mb-6 flex items-center gap-2">
+                <span className="w-1.5 h-6 bg-emerald-500 rounded-full"></span>
+                Key Skills
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {ANIRUDH_DATA.skills.map((skill, idx) => (
+                  <div key={idx} className="flex items-center gap-3 p-3.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c0c0f] shadow-sm">
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 font-bold text-xs">
+                      ✓
+                    </span>
+                    <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-200">{skill}</span>
+                  </div>
+                ))}
+              </div>
             </div>
+
+            {/* Certifications Block */}
+            <div>
+              <h3 className="text-xl font-bold tracking-tight mb-4 flex items-center gap-2">
+                <BadgeCheck className="text-emerald-500" size={22} />
+                Certificate & Certifications
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+                {ANIRUDH_DATA.certifications.map((cert, idx) => (
+                  <div key={idx} className="p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c0c0f] shadow-sm flex flex-col justify-between hover:border-emerald-500/40 transition-colors">
+                    <div>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 mb-2 inline-block">
+                        {cert.year}
+                      </span>
+                      <h4 className="text-xs font-bold text-zinc-900 dark:text-white leading-snug">
+                        {cert.title}
+                      </h4>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -785,10 +867,10 @@ function App() {
               }`}
             >
               <div className="flex items-center justify-between w-full">
-                <span className="font-extrabold text-zinc-900 dark:text-white">Emerald Heights School</span>
-                <span className="px-2 py-0.5 text-xs font-semibold rounded bg-emerald-100 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400">2019</span>
+                <span className="font-extrabold text-zinc-900 dark:text-white">Emerald Heights & Vidhya Sagar</span>
+                <span className="px-2 py-0.5 text-xs font-semibold rounded bg-emerald-100 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400">2017 - 2019</span>
               </div>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1.5 font-medium">12th Grade (96%) • India U-18 Football Camp</p>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1.5 font-medium">12th (Arts: 95.8%) • 10th (76%) • India U-18 Camp</p>
             </button>
 
           </div>
@@ -808,14 +890,16 @@ function App() {
                   <span className="flex items-center gap-1"><Award size={14} /> CGPA: 3.49 / 4.0</span>
                 </div>
                 <p className="text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed">
-                  Focusing on general management and advanced marketing analytics. Extensively engaged in student governance and experiential learning projects.
+                  Focusing on general management, finance, and advanced commercial analytics. Extensively engaged in student governance and experiential learning projects.
                 </p>
                 <div className="border-t border-zinc-100 dark:border-zinc-900 pt-4">
-                  <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Key Positions & Projects:</h4>
+                  <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Key Positions & Competitions:</h4>
                   <ul className="list-disc pl-5 space-y-2 text-xs text-zinc-550 dark:text-zinc-400">
-                    <li><strong>Placement Committee Member (BD)</strong> - Pitching corporate accounts and expanding brand placement opportunities.</li>
-                    <li><strong>Project Lead, Karma Yoga</strong> - Supervised a community-based leadership survey and development campaign.</li>
-                    <li><strong>Rest In Pitch Finalist (2026)</strong> - Solved live marketing case problems.</li>
+                    <li><strong>Placement Committee Member</strong> (2026) - Engaging corporate recruiters, corporate alignments, and student placement initiatives.</li>
+                    <li><strong>Project Lead Karma Yoga</strong> (2026) - Supervised socio-economic research, village immersion, and community development.</li>
+                    <li><strong>Consulting Case Competition Finalist</strong> (GLIM C | 2026) - Strategic consulting and case problem-solving.</li>
+                    <li><strong>Rest In Pitch Finalist</strong> (GLIM C | 2026) - Live business pitching and market strategy.</li>
+                    <li><strong>Hyrox 1st runner-up</strong> (GLIM C | 2026) - Fitness and endurance challenge.</li>
                   </ul>
                 </div>
                 {/* Associated Photos Strip */}
@@ -862,10 +946,10 @@ function App() {
                 <div className="border-t border-zinc-100 dark:border-zinc-900 pt-4">
                   <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Key Achievements & Roles:</h4>
                   <ul className="list-disc pl-5 space-y-2 text-xs text-zinc-550 dark:text-zinc-400">
-                    <li>Managed end-to-end loan conversion pipeline totaling <strong>₹50Cr</strong>, successfully generating <strong>₹30Cr top-line disbursements</strong> and ₹7.5Cr Net Lifetime Revenue.</li>
-                    <li>Sustained consistent lead-to-deal sanction ratios between <strong>45% to 55%</strong> through precise profiling and bottleneck resolution.</li>
-                    <li>Achieved <strong>300% of sales targets</strong> in 11 months, specializing in high-priority customer accounts and cross-border payment solutions.</li>
-                    <li>Built a real-time lead tracking dashboard, resulting in a <strong>100% surge in inbound organic leads</strong>.</li>
+                    <li>Managed an end-to-end portfolio of <strong>₹50Cr</strong>, driving funnel conversion from lead qualification to final closing to generate <strong>₹30Cr in top-line disbursement</strong> and ₹7.5Cr Net Lifetime Revenue.</li>
+                    <li>Analysed customer profiles and financial requirements to develop tailored solutions, resolving documentation bottlenecks and sustaining a <strong>45%–55%</strong> lead-to-deal sanction ratio.</li>
+                    <li>Resolved high-priority client issues and cross-border transaction challenges through structured stakeholder coordination and solution redesign, achieving <strong>300% of the target</strong> within 11 months.</li>
+                    <li>Identified and resolved communication gaps by introducing a real-time tracking dashboard, improving client trust and resulting in a <strong>100% surge in inbound leads</strong>.</li>
                   </ul>
                 </div>
 
@@ -884,14 +968,14 @@ function App() {
                   <span className="flex items-center gap-1"><User size={14} /> Customer Care Executive</span>
                 </div>
                 <p className="text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed">
-                  Assigned to retention and account growth of premier e-commerce Diamond seller portfolios.
+                  Assigned to retention and account growth of premier e-commerce Diamond seller portfolios for Flipkart.
                 </p>
                 <div className="border-t border-zinc-100 dark:border-zinc-900 pt-4">
                   <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Roles & Metrics:</h4>
                   <ul className="list-disc pl-5 space-y-2 text-xs text-zinc-550 dark:text-zinc-400">
-                    <li>Maintained an average of <strong>90% Seller SSAT</strong> score across high-value client portfolios.</li>
-                    <li>Proactively prevented competitor migration of critical sellers by resolving service delays and merchant escalations.</li>
-                    <li>Acquired skills in professional negotiation, active listening, and merchant CRM operations.</li>
+                    <li>Managed premier <strong>“Diamond” sellers</strong> for Flipkart on retention and portfolio growth, maintaining <strong>90% Seller SSAT</strong> across high-value accounts and minimising competitor migration.</li>
+                    <li>Addressed merchant operational escalations and resolved transaction issues to safeguard account health.</li>
+                    <li>Acquired skills in client relationship management, active listening, and merchant CRM operations.</li>
                   </ul>
                 </div>
               </div>
@@ -909,7 +993,7 @@ function App() {
                   <span className="flex items-center gap-1"><Award size={14} /> Score: 65.58%</span>
                 </div>
                 <p className="text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed">
-                  Completed Bachelor of Business Administration, laying the groundwork for strategic management, business accounting, and consumer psychology.
+                  Completed Bachelor of Business Administration (Commerce), laying the groundwork for strategic management, business accounting, and consumer psychology.
                 </p>
 
               </div>
@@ -919,22 +1003,23 @@ function App() {
             {expandedMilestone === 'school' && (
               <div className="space-y-5 animate-fadeIn">
                 <div className="flex items-center justify-between">
-                  <h3 className="font-extrabold text-xl text-zinc-900 dark:text-white">Emerald Heights International School</h3>
-                  <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">GRADUATED 2019</span>
+                  <h3 className="font-extrabold text-xl text-zinc-900 dark:text-white">Emerald Heights & Vidhya Sagar</h3>
+                  <span className="text-xs font-bold text-zinc-400 dark:text-zinc-500">2017 - 2019</span>
                 </div>
-                <div className="flex gap-4 text-xs font-semibold text-zinc-500 dark:text-zinc-400">
+                <div className="flex flex-wrap gap-4 text-xs font-semibold text-zinc-500 dark:text-zinc-400">
                   <span className="flex items-center gap-1"><MapPin size={14} /> Indore, India</span>
-                  <span className="flex items-center gap-1"><Award size={14} /> Score: 96% in 12th</span>
+                  <span className="flex items-center gap-1"><Award size={14} /> 12th (Arts): 95.8%</span>
+                  <span className="flex items-center gap-1"><Award size={14} /> 10th: 76%</span>
                 </div>
                 <p className="text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed">
-                  Academic top tier. Captain of the high school football team while balancing rigorous CBSE curricula.
+                  Academic top tier. Secured a 100% Sports Scholarship from EHIS and captained the varsity Football team while balancing rigorous academic curricula.
                 </p>
                 <div className="border-t border-zinc-100 dark:border-zinc-900 pt-4">
                   <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-wider mb-2">Athletic Highlights:</h4>
                   <ul className="list-disc pl-5 space-y-2 text-xs text-zinc-550 dark:text-zinc-400">
                     <li>Represented India in the <strong>U-18 Asian Games Football selection camp</strong> (2019).</li>
-                    <li>Secured <strong>100% Sports Scholarship</strong> from EHIS due to outstanding athletic merit.</li>
-                    <li>Led the school football team to victories at National, State, and District levels as captain (2020).</li>
+                    <li>Secured <strong>100% Sports Scholarship from EHIS</strong> due to outstanding athletic merit (2019).</li>
+                    <li>Led the school football team to victories as captain at national, state, and district levels (2020).</li>
                   </ul>
                 </div>
                 {/* Associated Photos Strip */}
@@ -1111,7 +1196,7 @@ function App() {
               </p>
               <a 
                 href={ANIRUDH_DATA.resumeUrl} 
-                download="Marketing_Resume_Anirudh.pdf"
+                download="Anirudh_Patel_Resume.pdf"
                 className="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg py-3 font-semibold transition shadow-sm"
               >
                 <FileText size={16} />
