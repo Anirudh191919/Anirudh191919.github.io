@@ -67,7 +67,7 @@ const ANIRUDH_DATA = {
   name: "Anirudh Patel",
   title: "Marketer & Growth Strategist",
   subtitle: "PGPM Candidate @ Great Lakes | Ex-Credila Sales Executive",
-  about: "Commercially minded marketer with strong business acumen and a data-led approach to identifying opportunities and driving measurable growth across revenue, customer acquisition, and market expansion.",
+  about: "Analytical professional combining multi-crore credit portfolio management with financial due diligence, AI-driven workflows, and stakeholder coordination to optimise workstreams and support high-impact investment decisions.",
   phone: "+91 62635 58264",
   email: "anirudh.ft271016@greatlakes.edu.in",
   linkedin: "https://www.linkedin.com/in/anirudh-patel-474996215",
@@ -79,14 +79,14 @@ const ANIRUDH_DATA = {
       institution: "Great Lakes Institute of Management, Chennai",
       period: "2026 - 2027",
       grade: "3.49 / 4.0 CGPA",
-      details: "Focusing on Commercial Analytics, Marketing Strategy, and Finance. Placement Committee Member & Karma Yoga Project Lead."
+      details: "Focusing on Commercial Analytics, Financial Due Diligence, and AI Workflows. Placement Committee Member & Karma Yoga Project Lead."
     },
     {
       degree: "BBA (Commerce)",
       institution: "Dr APJ Abdul Kalam University, Indore",
       period: "2019 - 2022",
       grade: "65.58%",
-      details: "Built foundational business administration principles, market logic, and customer relation skills."
+      details: "Built foundational business administration principles, financial accounting, and customer relation skills."
     },
     {
       degree: "12th Standard (Arts)",
@@ -110,14 +110,14 @@ const ANIRUDH_DATA = {
       company: "Credila Financial Services Limited",
       period: "Jun 2024 – Apr 2025",
       location: "Indore, India",
-      description: "Directed retail loan conversions, managed a large financial portfolio, and introduced system efficiency workflows.",
+      description: "Managed education-loan credit portfolio, financial due diligence, cross-border client transactions, and workflow automation.",
       bullets: [
-        "Managed an end-to-end portfolio of ₹50Cr, driving funnel conversion from lead qualification to final closing to generate ₹30Cr in top-line disbursement and ₹7.5Cr Net Lifetime Revenue.",
-        "Analysed customer profiles and financial requirements to develop tailored solutions, resolving documentation bottlenecks and sustaining a 45%–55% lead-to-deal sanction ratio.",
-        "Resolved high-priority client issues and cross-border transaction challenges through structured stakeholder coordination and solution redesign, achieving 300% of the target within 11 months.",
-        "Identified and resolved communication gaps by introducing a real-time tracking dashboard, improving client trust and resulting in a 100% surge in inbound leads."
+        "Managed an end-to-end ₹50Cr education-loan portfolio by analysing borrower profiles, structuring financing solutions, monitoring deal progression and coordinating stakeholders, driving ₹30Cr in disbursements and ₹7.5Cr in Net Lifetime Revenue.",
+        "Conducted financial due diligence on applicant income, asset collateral, and creditworthiness to eliminate underwriting bottlenecks and sustain a 45%–55% sanction-to-conversion ratio.",
+        "Managed high-priority client engagements and cross-border financial transactions by leading stakeholder coordination and solution redesign, achieving 300% of target within 11 months.",
+        "Designed a real-time tracking dashboard on Excel to map application stages, monitor workstream bottlenecks, and streamline cross-functional coordination, driving a 100% surge in inbound partner leads."
       ],
-      tags: ["Value Selling", "Portfolio Mgmt", "Client Relations", "Process Optimization"],
+      tags: ["Credit Portfolio", "Financial Due Diligence", "Client Engagement", "Excel Automation"],
       award: "Highest Performer HDFC Credila (2025)"
     },
     {
@@ -126,33 +126,33 @@ const ANIRUDH_DATA = {
       company: "Teleperformance",
       period: "Mar 2022 – Sep 2023",
       location: "Indore, India",
-      description: "Managed high-priority client accounts for portfolio retention and conflict resolution.",
+      description: "Managed premier e-commerce Diamond seller accounts for Flipkart, retention, and conflict resolution.",
       bullets: [
-        "Managed premier 'Diamond' sellers for Flipkart on retention and portfolio growth, maintaining 90% Seller SSAT across high-value accounts and minimising competitor migration."
+        "Managed high-value \"Diamond\" seller accounts for Flipkart, resolving operational & financial issues across GST, inventory, and payments to sustain ~90% Seller SSAT and minimise client churn."
       ],
-      tags: ["Account Retention", "Customer Centricity", "Escalation Resolution", "Active Listening"]
+      tags: ["Account Retention", "Seller SSAT", "GST & Inventory Escalations", "Client Churn Reduction"]
     }
   ],
   projects: [
     {
       title: "Herbs & Hopes 2026",
       subtitle: "Revenue Scale-Up & Digital Growth Strategy",
-      description: "Designed a trial-led acquisition and conversion model by reducing purchase friction and optimising the digital customer journey, creating a scalable approach to boost website-led sales.",
-      tags: ["D2C Acquisition", "Customer Journey", "Conversion Optimization"],
+      description: "Evaluated trial-led revenue growth strategies while deploying AI-agent workflows to automate funnel analytics and customer research, streamlining operations, reducing manual headcount reliance, and boosting website conversions.",
+      tags: ["AI Workflows", "Funnel Analytics", "Revenue Scale-Up"],
       link: "https://anirudh191919.github.io/herbsnhopes-campaign/",
       linkText: "View Live Campaign"
     },
     {
       title: "3DU Internship 2026",
       subtitle: "Market Entry & Go-to-Market Strategy",
-      description: "Developed the Go-to-Market roadmap by aligning customer segmentation, value proposition and marketing-mix levers, establishing a scalable approach for customer acquisition and growth.",
-      tags: ["Go-to-Market", "Customer Acquisition", "Value Proposition"]
+      description: "Formulated a Go-to-Market strategy by analysing market segmentation, customer acquisition levers, and financial pricing models to establish a scalable expansion framework.",
+      tags: ["Go-to-Market", "Market Segmentation", "Financial Pricing"]
     },
     {
       title: "PepsiCo Internship 2026",
       subtitle: "Market Research & Channel Strategy",
-      description: "Analysed retail-level data across product assortment, pricing, SKU availability and in-store visibility to identify distribution and merchandising gaps, generating actionable channel insights for retail strategy.",
-      tags: ["Retail Analytics", "Channel Strategy", "Distribution Insights"]
+      description: "Conducted retail market research across product availability, pricing structures, and competitor margins to identify distribution gaps and evaluate growth opportunities.",
+      tags: ["Retail Analytics", "Competitor Margins", "Channel Strategy"]
     },
     {
       category: "AGENTIC AI / AUTOMATION",
@@ -163,24 +163,32 @@ const ANIRUDH_DATA = {
     }
   ],
   skills: [
+    "Financial Modeling & Valuation",
+    "Credit & Risk Analysis",
+    "AI Workflows & Prompt Engineering",
     "Commercial Analytics",
-    "Growth & Digital Marketing",
-    "Go-to-Market Strategy",
-    "End-to-End Lead Conversion",
     "Client Relationship Management",
     "Cross-Functional Leadership"
   ],
   certifications: [
     {
+      title: "Equity and Derivative Market Analyst",
+      year: "2026"
+    },
+    {
+      title: "Investment Banking Analyst",
+      year: "2026"
+    },
+    {
+      title: "Google Analytics Certification",
+      year: "2026"
+    },
+    {
+      title: "Odoo Functional Certification",
+      year: "2026"
+    },
+    {
       title: "Customer-centricity and Interpersonal Skills",
-      year: "2026"
-    },
-    {
-      title: "Social Media Marketing",
-      year: "2026"
-    },
-    {
-      title: "Equity, Derivative Market & Investment Banking Analyst",
       year: "2026"
     }
   ],
@@ -699,7 +707,7 @@ function App() {
             </h2>
             <div className="space-y-4 text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm md:text-base">
               <p>
-                Commercially minded marketer with strong business acumen and a data-led approach to identifying opportunities and driving measurable growth across revenue, customer acquisition, and market expansion.
+                {ANIRUDH_DATA.about}
               </p>
               <p>
                 Professional experience spanning <strong>29 months</strong>, including managing an end-to-end portfolio of ₹50Cr at Credila Financial Services and managing premier "Diamond" accounts for Flipkart at Teleperformance.
