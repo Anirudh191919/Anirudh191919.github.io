@@ -243,67 +243,107 @@ const ANIRUDH_DATA = {
   footballCuttings: [
     {
       id: "cut-1",
-      title: "U-18 Asian School Championship Trialist",
-      badge: "India U-18 National Trial",
-      caption: "Selected among top youth footballers across India for the official U-18 Asian School Championship national football trial camp.",
+      title: "अनिरुद्ध की हैट्रिक से इंदौर के एमरल्ड ने दिल्ली के मान स्कूल को हराया",
+      badge: "Naidunia Press • Hat-Trick",
+      caption: "Indore's Emerald Heights defeated Man School Delhi 5-1 in All India IPSC Football, powered by a stellar hat-trick from Anirudh Patel.",
       image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.28 AM.jpeg",
-      category: "National Trials"
+      category: "Match Reports"
     },
     {
       id: "cut-2",
-      title: "State & Varsity Captaincy Press Coverage",
-      badge: "National, State & District Captain",
-      caption: "Lead newspaper coverage highlighting Anirudh's leadership as captain of the varsity football team across national, state, and district tournaments.",
+      title: "अनिरुद्ध व दिलीप बने जीत के हीरो",
+      badge: "Dabang Duniya • 3-3 Goals",
+      caption: "Anirudh Patel and Dilip Singh scored 3 goals each in Emerald Heights' dominant 6-0 victory over Sanskar Valley Bhopal in IPSC Football.",
       image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.28 AM (1).jpeg",
-      category: "Captaincy"
+      category: "Match Reports"
     },
     {
       id: "cut-3",
-      title: "100% EHIS Sports Scholarship Award",
-      badge: "Full Athletic Scholarship Recipient",
-      caption: "Press feature detailing the 100% full sports scholarship awarded by Emerald Heights International School for outstanding national athletic performance.",
+      title: "एमरल्ड हाइट्स और एमएनपीएस हरियाणा अभा आईपीएससी फुटबॉल के फाइनल में",
+      badge: "City Sports • Semifinal Victory",
+      caption: "Emerald Heights International School and MNPS Haryana entered the final of All India IPSC Football after defeating Mayo College Ajmer 2-1.",
       image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.28 AM (2).jpeg",
-      category: "Scholarships & Awards"
+      category: "Match Reports"
     },
     {
       id: "cut-4",
-      title: "Inter-State Championship Match Winner",
-      badge: "State Finalist & Playmaker",
-      caption: "Match press report praising tactical decision-making, high-intensity play, and decisive playmaking in inter-state championship games.",
+      title: "मेजबान एमरल्ड हाइट्स सेमीफाइनल में",
+      badge: "IPSC Tournament • Semifinals",
+      caption: "Host Emerald Heights clinched a semifinal spot in All India IPSC Football Tournament alongside Modern School Delhi and Mayo College Ajmer.",
       image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.29 AM.jpeg",
       category: "Match Reports"
     },
     {
       id: "cut-5",
-      title: "State Team Selection & Media Spotlight",
-      badge: "National Tournament Selection",
-      caption: "Media coverage highlighting selection to represent the state in national-level youth football championships.",
+      title: "मॉडर्न स्कूल, मेयो कॉलेज व एमएनएसएएस अंतिम चार में",
+      badge: "Dabang Duniya • Quarterfinal",
+      caption: "National IPSC tournament coverage detailing quarterfinal victories as top school teams advanced into the final four.",
       image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.29 AM (1).jpeg",
       category: "National Trials"
     },
     {
       id: "cut-6",
-      title: "District Championship Trophy Victory",
-      badge: "District Champions",
-      caption: "Local daily sports section headline celebrating victory in the district football championship under Anirudh's captaincy.",
+      title: "फुटबॉल में मेजबान स्कूल ने बनाई जीत की हैट्रिक",
+      badge: "Indore City • Victory Streak",
+      caption: "Emerald Heights crowned Overall Champions in Climbing while completing a 3-match win streak in All India IPSC Football.",
       image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.29 AM (2).jpeg",
       category: "Captaincy"
     },
     {
       id: "cut-7",
-      title: "GLIM Hyrox Fitness Challenge 1st Runner-Up",
-      badge: "Hyrox Athletics | GLIM Chennai",
-      caption: "Secured 1st Runner-Up in the GLIM Chennai Hyrox high-intensity fitness & endurance competition.",
-      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.30 AM (1).jpeg",
-      category: "Fitness & Hyrox"
+      title: "फुटबॉल गोल्ड विजेता",
+      badge: "Gold Champions • IPSC U-19",
+      caption: "Emerald Heights Football Team posing with championship gold medals after winning the All India IPSC U-19 Football Final 2-0.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.29 AM (3).jpeg",
+      category: "Scholarships & Awards"
     },
     {
       id: "cut-8",
-      title: "Tournament Top Playmaker Recognition",
-      badge: "Top Scorer & Assist Leader",
-      caption: "Press feature recognizing top offensive stats, match discipline, and teamwork during regional school championships.",
-      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.29 AM (3).jpeg",
+      title: "अनिरुद्ध ने एमरल्ड को दिलाई सक्सेस",
+      badge: "Patrika Sports • Match Winner",
+      caption: "Decisive match press report praising Anirudh's clinical playmaking, headers, and offensive leadership in driving team success.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.30 AM.jpeg",
       category: "Match Reports"
+    },
+    {
+      id: "cut-9",
+      title: "क्रिकेट खेलते-खेलते फुटबॉल का जुनून",
+      badge: "Player Spotlight • SGFI State Player",
+      caption: "Feature story on Anirudh Singh Patel—transitioning from cricket to scoring 2 goals in Patrika School Olympics final & SGFI state selection.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.30 AM (1).jpeg",
+      category: "Scholarships & Awards"
+    },
+    {
+      id: "cut-10",
+      title: "मेजबान एमरल्ड हाइट्स अंतिम चार में",
+      badge: "Patrika Indore • 21/09/2018",
+      caption: "Patrika news report celebrating Emerald Heights' triumph over Rajkumar College Rajkot to enter the All India IPSC semi-finals.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.30 AM (2).jpeg",
+      category: "Match Reports"
+    },
+    {
+      id: "cut-11",
+      title: "एमरल्ड स्पोर्ट्स एकेडमी की जीत में अनिरुद्ध ने जमाई हैट्रिक",
+      badge: "City Sports • Sonkar Memorial Hat-Trick",
+      caption: "Anirudh Patel starred with a magnificent hat-trick to propel Emerald Sports Academy to a 3-0 victory over Ekta Club Gothida.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.31 AM.jpeg",
+      category: "Match Reports"
+    },
+    {
+      id: "cut-12",
+      title: "दिव्यांश और अनिरुद्ध के मैदानी गोल से एमरल्ड हाइट्स फाइनल में",
+      badge: "Subroto Cup • Field Goals",
+      caption: "Subroto Cup Football feature highlighting decisive field goals by Anirudh Patel and Divyansh to power Emerald Heights into the grand final.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.31 AM (1).jpeg",
+      category: "Match Reports"
+    },
+    {
+      id: "cut-13",
+      title: "Emerald Heights Wins IPSC U-19 Football Tourney",
+      badge: "National Daily • English Coverage",
+      caption: "National English daily reporting Emerald Heights' victory over MNPS Haryana to win the All India IPSC U-19 Football Championship.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.31 AM (2).jpeg",
+      category: "National Trials"
     }
   ],
   extraCurriculars: [
