@@ -24,7 +24,11 @@ import {
   Image as ImageIcon,
   User,
   Heart,
-  BadgeCheck
+  BadgeCheck,
+  Trophy,
+  Activity,
+  ZoomIn,
+  Sparkles
 } from 'lucide-react';
 
 // Custom inline SVG icons for brands (Github & Linkedin)
@@ -65,9 +69,9 @@ const Linkedin = ({ size = 24, ...props }) => (
 
 const ANIRUDH_DATA = {
   name: "Anirudh Patel",
-  title: "Marketer & Growth Strategist",
+  title: "Former National Football Player | Operations & Client Portfolio Management",
   subtitle: "PGPM Candidate @ Great Lakes | Ex-Credila Sales Executive",
-  about: "Analytical professional combining multi-crore credit portfolio management with financial due diligence, AI-driven workflows, and stakeholder coordination to optimise workstreams and support high-impact investment decisions.",
+  about: "Process-oriented professional and former National football Player with experience across customer operations and client portfolio management. Combines hands on problem solving, data tracking, and sports leadership to build efficient team environments.",
   phone: "+91 62635 58264",
   email: "anirudh.ft271016@greatlakes.edu.in",
   linkedin: "https://www.linkedin.com/in/anirudh-patel-474996215",
@@ -79,21 +83,21 @@ const ANIRUDH_DATA = {
       institution: "Great Lakes Institute of Management, Chennai",
       period: "2026 - 2027",
       grade: "3.49 / 4.0 CGPA",
-      details: "Focusing on Commercial Analytics, Financial Due Diligence, and AI Workflows. Placement Committee Member & Karma Yoga Project Lead."
+      details: "Focusing on Customer Operations, Data Tracking, and Sports Leadership. Placement Committee Coordinator & Karma Yoga Project Lead."
     },
     {
       degree: "BBA (Commerce)",
       institution: "Dr APJ Abdul Kalam University, Indore",
       period: "2019 - 2022",
       grade: "65.58%",
-      details: "Built foundational business administration principles, financial accounting, and customer relation skills."
+      details: "Built foundational business administration principles, financial operations, and customer relation skills."
     },
     {
       degree: "12th Standard (Arts)",
       institution: "The Emerald Heights International School, Indore",
       period: "2019",
       grade: "95.8%",
-      details: "Academic top tier. Secured a 100% Sports Scholarship from EHIS and captained the varsity Football team."
+      details: "Academic top tier. Awarded 100% Sports Scholarship from EHIS and captained varsity Football team at national level."
     },
     {
       degree: "10th Standard",
@@ -107,17 +111,17 @@ const ANIRUDH_DATA = {
     {
       id: "exp-credila",
       role: "Sales Executive",
-      company: "Credila Financial Services Limited",
+      company: "HDFC Credila Financial Services Limited",
       period: "Jun 2024 – Apr 2025",
       location: "Indore, India",
-      description: "Managed education-loan credit portfolio, financial due diligence, cross-border client transactions, and workflow automation.",
+      description: "Managed education-loan operational portfolio, evaluating customer requirements, cross-functional team coordination, and SLA compliance.",
       bullets: [
-        "Managed an end-to-end ₹50Cr education-loan portfolio by analysing borrower profiles, structuring financing solutions, monitoring deal progression and coordinating stakeholders, driving ₹30Cr in disbursements and ₹7.5Cr in Net Lifetime Revenue.",
-        "Conducted financial due diligence on applicant income, asset collateral, and creditworthiness to eliminate underwriting bottlenecks and sustain a 45%–55% sanction-to-conversion ratio.",
-        "Managed high-priority client engagements and cross-border financial transactions by leading stakeholder coordination and solution redesign, achieving 300% of target within 11 months.",
+        "Managed an end-to-end ₹ 50 Cr operational portfolio, evaluating customer requirements, streamlining deal progression, and coordinating cross-functional teams to achieve ₹ 30 Cr in disbursements.",
+        "Resolved high-priority escalations and complex customer issues through structured stakeholder coordination, achieving 300% of the target within 11 months.",
+        "Analysed profile requirements and operational documentation gaps to resolve application bottlenecks, sustaining a 45%–55% conversion ratio under tight timeline SLAs.",
         "Designed a real-time tracking dashboard on Excel to map application stages, monitor workstream bottlenecks, and streamline cross-functional coordination, driving a 100% surge in inbound partner leads."
       ],
-      tags: ["Credit Portfolio", "Financial Due Diligence", "Client Engagement", "Excel Automation"],
+      tags: ["Operational Portfolio", "Escalation Resolution", "SLA Compliance", "Excel Automation"],
       award: "Highest Performer HDFC Credila (2025)"
     },
     {
@@ -126,33 +130,33 @@ const ANIRUDH_DATA = {
       company: "Teleperformance",
       period: "Mar 2022 – Sep 2023",
       location: "Indore, India",
-      description: "Managed premier e-commerce Diamond seller accounts for Flipkart, retention, and conflict resolution.",
+      description: "Managed operational workflows for premier Flipkart sellers, resolving fulfilment, inventory and payment issues.",
       bullets: [
-        "Managed high-value \"Diamond\" seller accounts for Flipkart, resolving operational & financial issues across GST, inventory, and payments to sustain ~90% Seller SSAT and minimise client churn."
+        "Managed operational workflows for premier Flipkart sellers, resolving fulfilment, inventory and payment issues to maintain 90% Seller SSAT and ensure strict operational SLA compliance."
       ],
-      tags: ["Account Retention", "Seller SSAT", "GST & Inventory Escalations", "Client Churn Reduction"]
+      tags: ["Seller SSAT", "Workflows & SLA", "Fulfilment & Inventory", "Operational SLA"]
     }
   ],
   projects: [
     {
-      title: "Herbs & Hopes 2026",
-      subtitle: "Revenue Scale-Up & Digital Growth Strategy",
-      description: "Evaluated trial-led revenue growth strategies while deploying AI-agent workflows to automate funnel analytics and customer research, streamlining operations, reducing manual headcount reliance, and boosting website conversions.",
-      tags: ["AI Workflows", "Funnel Analytics", "Revenue Scale-Up"],
-      link: "https://anirudh191919.github.io/herbsnhopes-campaign/",
-      linkText: "View Live Campaign"
-    },
-    {
       title: "3DU Internship 2026",
       subtitle: "Market Entry & Go-to-Market Strategy",
-      description: "Formulated a Go-to-Market strategy by analysing market segmentation, customer acquisition levers, and financial pricing models to establish a scalable expansion framework.",
-      tags: ["Go-to-Market", "Market Segmentation", "Financial Pricing"]
+      description: "Formulated a Go-to-Market roadmap by evaluating customer segments, service delivery models, and pricing levers, establishing a structured execution plan for market Entry.",
+      tags: ["Go-to-Market Roadmap", "Service Delivery", "Pricing Levers"]
     },
     {
       title: "PepsiCo Internship 2026",
       subtitle: "Market Research & Channel Strategy",
-      description: "Conducted retail market research across product availability, pricing structures, and competitor margins to identify distribution gaps and evaluate growth opportunities.",
-      tags: ["Retail Analytics", "Competitor Margins", "Channel Strategy"]
+      description: "Analysed retail-level data across product assortment, pricing, SKU availability and in-store visibility to identify distribution and merchandising gaps, generating actionable channel insights for retail strategy.",
+      tags: ["Retail Analytics", "Distribution Gaps", "Channel Strategy"]
+    },
+    {
+      title: "Herbs & Hopes 2026",
+      subtitle: "Revenue Scale-Up & Digital Growth Strategy",
+      description: "Analysed customer purchase barriers and conversion friction to design a trial-led acquisition model while leveraging AI-agent workflows to streamline research and operational processes.",
+      tags: ["AI Workflows", "Conversion Friction", "Process Automation"],
+      link: "https://anirudh191919.github.io/herbsnhopes-campaign/",
+      linkText: "View Live Campaign"
     },
     {
       category: "AGENTIC AI / AUTOMATION",
@@ -163,26 +167,14 @@ const ANIRUDH_DATA = {
     }
   ],
   skills: [
-    "Financial Modeling & Valuation",
-    "Credit & Risk Analysis",
+    "Team Leadership & Performance Management",
+    "Cross-Functional Leadership",
     "AI Workflows & Prompt Engineering",
-    "Commercial Analytics",
-    "Client Relationship Management",
-    "Cross-Functional Leadership"
+    "Data Analytics & Generative AI",
+    "AI Tools: Antigravity, Langflow, LucidAI, NotebookLM",
+    "Business Tools: Tableau, Excel, Bizagi Modeler, Gamma-AI, Canva-AI, Odoo ERP"
   ],
   certifications: [
-    {
-      title: "Equity and Derivative Market Analyst",
-      year: "2026"
-    },
-    {
-      title: "Investment Banking Analyst",
-      year: "2026"
-    },
-    {
-      title: "Google Analytics Certification",
-      year: "2026"
-    },
     {
       title: "Odoo Functional Certification",
       year: "2026"
@@ -190,23 +182,27 @@ const ANIRUDH_DATA = {
     {
       title: "Customer-centricity and Interpersonal Skills",
       year: "2026"
+    },
+    {
+      title: "Google Analytics Certification",
+      year: "2026"
     }
   ],
   achievements: [
+    {
+      title: "INDIA U-18 Asian School Championship Football Trial",
+      detail: "Selected to represent India at the U-18 Asian School Championship Football selection camp (2019).",
+      category: "sports"
+    },
     {
       title: "Hyrox 1st runner-up",
       detail: "Secured 1st runner-up place at the Hyrox fitness challenge held at GLIM Chennai (GLIM C | 2026).",
       category: "sports"
     },
     {
-      title: "Consulting Case Competition Finalist",
-      detail: "Selected as finalist in the Consulting Case Competition at Great Lakes Chennai (GLIM C | 2026).",
-      category: "college"
-    },
-    {
-      title: "Rest In Pitch Finalist",
-      detail: "Finalist in the 'Rest In Pitch' case competition event at Great Lakes Chennai (GLIM C | 2026).",
-      category: "college"
+      title: "100% Sports Scholarship from EHIS",
+      detail: "Recipient of 100% Sports Scholarship for outstanding athletic merit from EHIS (2019).",
+      category: "sports"
     },
     {
       title: "Highest Performer HDFC Credila",
@@ -214,38 +210,104 @@ const ANIRUDH_DATA = {
       category: "work"
     },
     {
-      title: "INDIA U-18 Asian Games Football",
-      detail: "Selected to represent India at the U-18 Asian Games Football selection camp (2019).",
-      category: "sports"
+      title: "Rest In Pitch Finalist",
+      detail: "Finalist in the 'Rest In Pitch' case competition event at Great Lakes Chennai (GLIM C | 2026).",
+      category: "college"
     },
     {
-      title: "100% Sports Scholarship from EHIS",
-      detail: "Recipient of 100% Sports Scholarship for outstanding athletic merit from EHIS (2019).",
-      category: "sports"
+      title: "Consulting Case Competition Finalist",
+      detail: "Selected as finalist in the Consulting Case Competition at Great Lakes Chennai (GLIM C | 2026).",
+      category: "college"
     }
   ],
   responsibilities: [
     {
-      role: "Placement Committee Member",
+      role: "Football Team Captain (National, State & District)",
+      organization: "The Emerald Heights International School",
+      year: "2020",
+      details: "Captained the football team at national, state, and district levels, managing tournament strategies, squad training, and performance management."
+    },
+    {
+      role: "Placement Committee Coordinator",
       organization: "Great Lakes Institute of Management, Chennai",
       year: "2026",
-      details: "Driving corporate relations, business development outreach, and student placement alignments."
+      details: "Coordinating corporate outreach, company engagements, and student corporate alignment."
     },
     {
       role: "Project Lead Karma Yoga",
       organization: "Great Lakes Institute of Management, Chennai",
       year: "2026",
       details: "Leading socio-economic research, village immersion, and community development under the GLIM experiential leadership program."
+    }
+  ],
+  footballCuttings: [
+    {
+      id: "cut-1",
+      title: "U-18 Asian School Championship Trialist",
+      badge: "India U-18 National Trial",
+      caption: "Selected among top youth footballers across India for the official U-18 Asian School Championship national football trial camp.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.28 AM.jpeg",
+      category: "National Trials"
     },
     {
-      role: "Football Team Captain (National, State & District)",
-      organization: "The Emerald Heights International School",
-      year: "2020",
-      details: "Captained the football team at national, state, and district levels, managing tournament strategies and squad training."
+      id: "cut-2",
+      title: "State & Varsity Captaincy Press Coverage",
+      badge: "National, State & District Captain",
+      caption: "Lead newspaper coverage highlighting Anirudh's leadership as captain of the varsity football team across national, state, and district tournaments.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.28 AM (1).jpeg",
+      category: "Captaincy"
+    },
+    {
+      id: "cut-3",
+      title: "100% EHIS Sports Scholarship Award",
+      badge: "Full Athletic Scholarship Recipient",
+      caption: "Press feature detailing the 100% full sports scholarship awarded by Emerald Heights International School for outstanding national athletic performance.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.28 AM (2).jpeg",
+      category: "Scholarships & Awards"
+    },
+    {
+      id: "cut-4",
+      title: "Inter-State Championship Match Winner",
+      badge: "State Finalist & Playmaker",
+      caption: "Match press report praising tactical decision-making, high-intensity play, and decisive playmaking in inter-state championship games.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.29 AM.jpeg",
+      category: "Match Reports"
+    },
+    {
+      id: "cut-5",
+      title: "State Team Selection & Media Spotlight",
+      badge: "National Tournament Selection",
+      caption: "Media coverage highlighting selection to represent the state in national-level youth football championships.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.29 AM (1).jpeg",
+      category: "National Trials"
+    },
+    {
+      id: "cut-6",
+      title: "District Championship Trophy Victory",
+      badge: "District Champions",
+      caption: "Local daily sports section headline celebrating victory in the district football championship under Anirudh's captaincy.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.29 AM (2).jpeg",
+      category: "Captaincy"
+    },
+    {
+      id: "cut-7",
+      title: "GLIM Hyrox Fitness Challenge 1st Runner-Up",
+      badge: "Hyrox Athletics | GLIM Chennai",
+      caption: "Secured 1st Runner-Up in the GLIM Chennai Hyrox high-intensity fitness & endurance competition.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.30 AM (1).jpeg",
+      category: "Fitness & Hyrox"
+    },
+    {
+      id: "cut-8",
+      title: "Tournament Top Playmaker Recognition",
+      badge: "Top Scorer & Assist Leader",
+      caption: "Press feature recognizing top offensive stats, match discipline, and teamwork during regional school championships.",
+      image: "/assets/images/Achievement football/WhatsApp Image 2026-08-19 at 2.41.29 AM (3).jpeg",
+      category: "Match Reports"
     }
   ],
   extraCurriculars: [
-    "Football",
+    "Football (Former National Player)",
     "Investor & Trader",
     "Esports gaming"
   ],
@@ -327,6 +389,7 @@ function App() {
   
   // Photo Lightbox modal
   const [lightboxImg, setLightboxImg] = useState(null);
+  const [selectedCuttingTab, setSelectedCuttingTab] = useState('All Highlights');
   
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -348,7 +411,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['projects', 'about', 'journey', 'photos', 'achievements', 'contact'];
+      const sections = ['sports-spotlight', 'projects', 'about', 'journey', 'photos', 'achievements', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -445,24 +508,31 @@ function App() {
       {/* Lightbox / Fullscreen Image Viewer Modal */}
       {lightboxImg && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 backdrop-blur-sm animate-fadeIn"
           onClick={() => setLightboxImg(null)}
         >
           <button 
-            className="absolute top-4 right-4 text-white hover:text-zinc-400 p-2"
+            className="absolute top-4 right-4 bg-zinc-900/80 text-white hover:text-emerald-400 p-2.5 rounded-full border border-zinc-700 transition"
             onClick={() => setLightboxImg(null)}
           >
-            <X size={28} />
+            <X size={24} />
           </button>
-          <div className="relative max-w-4xl max-h-[85vh] overflow-hidden" onClick={e => e.stopPropagation()}>
+          <div className="relative max-w-5xl max-h-[90vh] flex flex-col items-center justify-center p-2" onClick={e => e.stopPropagation()}>
             <img 
-              src={lightboxImg.url} 
-              alt={lightboxImg.category} 
-              className="max-w-full max-h-[85vh] rounded-lg object-contain shadow-2xl"
+              src={lightboxImg.url || lightboxImg} 
+              alt={lightboxImg.title || lightboxImg.category || "Clipping"} 
+              className="max-w-full max-h-[72vh] rounded-lg object-contain shadow-2xl border border-zinc-800"
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
-              <span className="text-xs uppercase tracking-wider font-bold text-emerald-400">{lightboxImg.category}</span>
-              <p className="text-sm mt-1">Anirudh Patel - Journey Photo</p>
+            <div className="w-full mt-3 bg-zinc-900/90 border border-zinc-800 rounded-xl p-4 text-white text-center max-w-2xl shadow-xl">
+              <span className="text-xs uppercase tracking-widest font-black text-emerald-400 block mb-1">
+                {lightboxImg.category || lightboxImg.badge || "Sports Highlight & Press Coverage"}
+              </span>
+              <h4 className="font-bold text-base text-zinc-100 mb-1">
+                {lightboxImg.title || "Football Achievement & Press Clipping"}
+              </h4>
+              <p className="text-xs text-zinc-300 leading-relaxed font-medium">
+                {lightboxImg.caption || "Anirudh Patel - Official Media Coverage & Athletic Milestones"}
+              </p>
             </div>
           </div>
         </div>
@@ -476,8 +546,9 @@ function App() {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <nav className="hidden md:flex items-center space-x-7 text-sm font-medium">
             {[
+              { id: 'sports-spotlight', label: 'Sports Press Cuttings' },
               { id: 'projects', label: 'Projects' },
               { id: 'about', label: 'About' },
               { id: 'journey', label: 'My Journey' },
@@ -490,7 +561,7 @@ function App() {
                 href={`#${item.id}`}
                 className={`capitalize transition-colors hover:text-emerald-500 dark:hover:text-emerald-400 ${
                   activeSection === item.id 
-                    ? 'text-emerald-600 dark:text-emerald-400' 
+                    ? 'text-emerald-600 dark:text-emerald-400 font-bold' 
                     : 'text-zinc-600 dark:text-zinc-400'
                 }`}
               >
@@ -524,6 +595,7 @@ function App() {
         {mobileMenuOpen && (
           <div className="md:hidden border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 px-4 py-4 space-y-3 transition-colors duration-305">
             {[
+              { id: 'sports-spotlight', label: 'Sports Press Cuttings' },
               { id: 'projects', label: 'Projects' },
               { id: 'about', label: 'About' },
               { id: 'journey', label: 'My Journey' },
@@ -609,6 +681,98 @@ function App() {
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      <hr className="max-w-5xl mx-auto border-zinc-200 dark:border-zinc-900" />
+
+      {/* Sports Leadership & Football Press Cuttings Spotlight (Decathlon Target Feature) */}
+      <section id="sports-spotlight" className="max-w-5xl mx-auto px-4 py-10 md:py-14">
+        <div className="p-6 md:p-8 rounded-2xl border-2 border-emerald-500/80 bg-gradient-to-br from-emerald-50/50 via-white to-blue-50/30 dark:from-emerald-950/30 dark:via-zinc-950 dark:to-blue-950/20 shadow-xl relative overflow-hidden">
+          
+          {/* Decathlon Highlight Ribbon */}
+          <div className="flex flex-wrap items-center justify-between gap-3 mb-6 pb-4 border-b border-zinc-200 dark:border-zinc-800">
+            <div className="flex items-center gap-2">
+              <span className="px-3 py-1 text-xs font-black bg-emerald-600 text-white rounded-full uppercase tracking-wider shadow-sm flex items-center gap-1.5">
+                <Trophy size={14} /> Sports Leadership & Athletic Press Coverage
+              </span>
+              <span className="hidden sm:inline-block px-3 py-1 text-xs font-bold bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 rounded-full">
+                Former National Football Player
+              </span>
+            </div>
+            <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
+              <Sparkles size={14} className="text-emerald-500" /> Decathlon Values: Passion for Sport & Teamwork
+            </span>
+          </div>
+
+          <div className="text-center md:text-left mb-8">
+            <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white flex items-center gap-2 justify-center md:justify-start">
+              <Activity className="text-emerald-500" size={28} />
+              Football Newspaper Cuttings & Media Coverage
+            </h2>
+            <p className="text-sm text-zinc-650 dark:text-zinc-400 mt-2 max-w-3xl leading-relaxed">
+              Media coverage detailing national football trials, varsity captaincy, and sports scholarship honors. Click any photo for a high-res readable view.
+            </p>
+          </div>
+
+          {/* Interactive Category Filter Tabs */}
+          <div className="flex flex-wrap items-center gap-2 mb-8 justify-center md:justify-start">
+            {['All Highlights', 'National Trials', 'Captaincy', 'Scholarships & Awards', 'Match Reports', 'Fitness & Hyrox'].map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setSelectedCuttingTab(tab)}
+                className={`px-3.5 py-1.5 text-xs font-bold rounded-lg border transition-all duration-200 ${
+                  selectedCuttingTab === tab
+                    ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm'
+                    : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:border-emerald-400'
+                }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+
+          {/* Floating Interactive Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {(selectedCuttingTab === 'All Highlights' 
+              ? ANIRUDH_DATA.footballCuttings 
+              : ANIRUDH_DATA.footballCuttings.filter(c => c.category === selectedCuttingTab)
+            ).map((cut) => (
+              <div
+                key={cut.id}
+                onClick={() => setLightboxImg({ url: cut.image, category: cut.badge, caption: cut.caption, title: cut.title })}
+                className="group relative flex flex-col justify-between rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c0c0f] overflow-hidden shadow-md hover:shadow-2xl hover:border-emerald-500/80 hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+              >
+                {/* Large Readable Image Container */}
+                <div className="relative h-72 md:h-80 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-900/60 border-b border-zinc-100 dark:border-zinc-850 flex items-center justify-center p-3">
+                  <img
+                    src={cut.image}
+                    alt={cut.title}
+                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                    <span className="px-4 py-2 bg-emerald-600 text-white rounded-lg text-xs font-bold flex items-center gap-2 shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                      <ZoomIn size={16} /> Open High-Res Readable View
+                    </span>
+                  </div>
+                  <span className="absolute top-3 left-3 px-2.5 py-1 bg-black/80 backdrop-blur-md text-emerald-400 text-[10px] font-black uppercase tracking-wider rounded-md border border-emerald-500/40">
+                    {cut.badge}
+                  </span>
+                </div>
+
+                {/* 1-2 Line Explanatory Caption */}
+                <div className="p-4 bg-white dark:bg-[#0c0c0f]">
+                  <h3 className="font-extrabold text-sm text-zinc-900 dark:text-white mb-1.5 line-clamp-1 group-hover:text-emerald-500 transition-colors">
+                    {cut.title}
+                  </h3>
+                  <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed line-clamp-2 font-medium">
+                    {cut.caption}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 
